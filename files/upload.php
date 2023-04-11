@@ -1,7 +1,7 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-    // chech if the file was uploaded successfully
+    // check if the file was uploaded successfully
     if(isset($_FILES['file']) && $_FILES['file']['error'] == UPLOAD_ERR_OK){
         $file_name = $_FILES['file']['name'];
         $file_size = $_FILES['file']['size'];

@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Gaming Website</title>
+        <title>Xedrial Games</title>
         <link rel="icon" href="">
-        <link rel="stylesheet" href="files/css.css"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <input type="checkbox" id="check">
     <header>
         <nav>
-            <div class="icon"><p><span style="color: red; font-size: 40px;">X</span>DERIAL</p></div>
+            <div class="icon"><p><span style="color: red; font-size: 40px;">X</span>EDRIAL</p></div>
             <div class="search_box">
                 <input type="search" placeholder="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -38,7 +38,7 @@
         <div class="banner">
             <div class="background">
                 <div class="content">
-                    <h2 style="font-size: 50px;"><span style="color:rgb(255, 0, 0)" id="home">X</span>DERIAL</h2>
+                    <h2 style="font-size: 50px;"><span style="color:rgb(255, 0, 0)" id="home">X</span>EDRIAL</h2>
                     <h2>A New Home For <br> Game Lovers</h2>
                     <p>Add Your Own Games, Download Free Games, Discusse varius Subjects, All For Free</p>
                     <a href="#" class="btn">Join Now</a>
@@ -49,16 +49,16 @@
     </header>
     
     <div class="sector">
-        <img src="../Computer project/images/brand-1.png">
-        <img src="../Computer project/images/brand-2.png" style="padding-left: 100px;">
-        <img src="../Computer project/images/brand-3.png" style="padding-left: 100px;">
-        <img src="../Computer project/images/brand-4.png" style="padding-left: 100px;">
-        <img src="../Computer project/images/brand-5.png" style="padding-left: 100px;">
-        <img src="../Computer project/images/brand-6.png" style="padding-left: 100px;">
+        <img src="images/brand-1.png">
+        <img src="images/brand-2.png" style="padding-left: 100px;">
+        <img src="images/brand-3.png" style="padding-left: 100px;">
+        <img src="images/brand-4.png" style="padding-left: 100px;">
+        <img src="images/brand-5.png" style="padding-left: 100px;">
+        <img src="images/brand-6.png" style="padding-left: 100px;">
     </div>
 
         <div class="Games" id="games">
-            <h2><span style="color: red;">X</span>DERIAL GAMES</h2>
+            <h2><span style="color: red;">X</span>EDRIAL GAMES</h2>
             <ul>
                 <li class="list active" data-filter="all">All</li>
                 <li class="list" data-filter="ours">Our Games</li>
@@ -124,9 +124,9 @@
                         <h2>About Us</h2>
                         <p> There are alot of gaming websites on the internet, but they all have one big issue;<br>
                             that is you can only play the game that were designed or uploaded by the site's owner.<br>
-                            In this site,however, team XDERIAL solved that problem, now you can play all the games that <br>
+                            In this site,however, team XEDRIAL solved that problem, now you can play all the games that <br>
                             we designed and upload ones of your own.</p>
-                        <p>Altough it is a prototype XDERIAL is expected to provide various users around the world <br>
+                        <p>Altough it is a prototype XEDRIAL is expected to provide various users around the world <br>
                            with an enjoyable and unique experience through the games that will be available within it.<br>
                            And it will open , a field for the creativity and ideas of game programmers around the globe.</p>
                         <a href="#">Read More</a>
@@ -165,7 +165,7 @@
         <!-- Footer -->
         <footer>
             <div class="info">
-                <a href="#" class="logo">XDERIAL</a>
+                <a href="#" class="logo">XEDRIAL</a>
                 <p><i class="fa fa-copyright"></i>2023 All Rights Reserved </p>
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -178,19 +178,19 @@
 
         <script>
             /*sticky bar */
-            window.addEventListener("scroll",function(){
-                var nav = document.querySelector("nav");
+            window.addEventListener("scroll", () => {
+                let nav = document.querySelector("nav");
                 nav.classList.toggle("sticky",window.scrollY > 0);
             });
 
             /* filterable cards */
-            let list = document.querySelectorAll('.list');
+            let filterList = document.querySelectorAll('.list');
             let card = document.querySelectorAll('.card');
 
-            for(let i = 0; i < list.length; i++){
-                list[i].addEventListener('click',function(){
-                    for(let j = 0; j < list.length; j++){
-                        list[j].classList.remove('active');
+            for (let i = 0; i < filterList.length; i++) {
+                filterList[i].addEventListener('click',function(){
+                    for(let j = 0; j < filterList.length; j++){
+                        filterList[j].classList.remove('active');
                     }
                     this.classList.add('active');
 

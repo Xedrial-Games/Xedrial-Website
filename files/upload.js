@@ -1,12 +1,12 @@
 function uploadGame(){
-    var fileInput = document.getElementById("game-file");
-    var file = fileInput.files[0];
-    var formData = new FormData();
+    let fileInput = document.getElementById("game-file");
+    let file = fileInput.files[0];
+    let formData = new FormData();
     formData.append("game-file",file);
 
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open("POST","upload.php");
-    xhr.onload = function(){
+    xhr.onload = () => {
         if(xhr.status === 200){
             alert("Game uploaded successfully");
             fileInput.value = "";

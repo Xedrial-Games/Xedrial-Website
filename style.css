@@ -12,7 +12,7 @@ body{
     background-size: cover;
 }
 header{
-    background-image: url("../images/1594671.jpg");
+    background-image: url("images/1594671.jpg");
     background-size: cover;
 }
 nav{
@@ -132,7 +132,7 @@ nav .bar i{
     font-size: 35px;
 }
 input[type="checkbox"]{
-    -webkit-appearance: none; 
+    appearance: none; 
     display: none;
 }
 @media screen and (max-width: 1250px) {
@@ -292,7 +292,7 @@ input[type="checkbox"]{
 }
 /* about */
 .about{
-    background: url("../images/1594798.jpg");
+    background: url("images/1594798.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -348,7 +348,7 @@ input[type="checkbox"]{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../images/1594672.jpg");   /* if i want to add aphoto */    
+    background: url("images/1594672.jpg");   /* if i want to add aphoto */    
     background-position: center;
     background-size: cover;
     top: 0;
@@ -497,7 +497,7 @@ input[type="checkbox"]{
     height: 30px;
 }
 .contact{
-    background-image: url("../images/4240415.jpg");
+    background-image: url("images/4240415.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px 100px;
