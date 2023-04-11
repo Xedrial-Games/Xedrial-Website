@@ -615,3 +615,58 @@ footer .info ul li a i{
 footer .info ul li:hover a i{
     color: #050e2e;
 }
+
+/* Upload Your Game Style */
+
+.addGame{
+    background: url("images/1594672.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+.addGame .field .game{
+    margin-top: 30px;
+}
+.addGame .field .game button{
+    margin-right: 40px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+.addGame .field .game button:hover{
+    background: #ef1a1a;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ef1a1a;
+}
+.addGame .field{
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+}
+.addGame .field .content{
+    margin-top: 20px;
+}
+.addGame .field .content  input,
+.addGame .field .content  textarea{
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: #6b2b2bc2;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+.addGame .field .content p{
+    margin-top: 10px;
+    font-weight: bold;
+
+}
