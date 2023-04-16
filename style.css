@@ -132,7 +132,7 @@ nav .bar i{
     font-size: 35px;
 }
 input[type="checkbox"]{
-    appearance: none; 
+    -webkit-appearance: none; 
     display: none;
 }
 @media screen and (max-width: 1250px) {
